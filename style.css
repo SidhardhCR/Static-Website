@@ -1,0 +1,82 @@
+.img-fluid{
+    max-width: 100px
+}
+.navbar .navbar-nav .nav-link1:hover {
+    color:#fff;
+  }
+  @media only screen and (min-width: 960px) {
+    .navbar .navbar-nav .nav-link {
+      padding: 1em 0.7em;
+    }
+    .navbar {
+      padding: 0;
+    }
+    .navbar .navbar-brand {
+      padding: 0 0.7em;
+    }
+  }
+  .navbar .navbar-nav .nav-link {
+    position: relative;
+  }
+  .navbar .navbar-nav .nav-link::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color:#fff;
+    color: transparent;
+    width: 0%;
+    content: '';
+    height: 3px;
+    transition: all 0.5s;
+  }
+  .navbar .navbar-nav .nav-link:hover::after {
+    width: 100%;
+  }
+
+  body {
+    background-color:#fff;
+    text-align: center;
+    color:#fff;
+  }
+  
+ .typewrite{ color:#fff; text-decoration:none}
+  
+ #myBtn {
+    
+    position: fixed;
+    display: none;
+    background:#0078ff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 1;
+    outline: none;
+    font-size: 16px;
+    border-radius: 50%;
+    right: 15px;
+    bottom: 15px;
+    transition:background 0.5s;
+    z-index: 11;
+}
+.bg-overlay {
+  background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("https://www.completeonline.co.uk/wp-content/uploads/2020/11/Emerging-web-design-trends-for-2021.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  height: 45em;
+}
+
+body{min-height:200vh;}
+.navbar-default{
+  transition:500ms ease;
+  background:transparent;
+}
+.navbar-default.scrolled{
+  background:#0a0b1b;
+}
